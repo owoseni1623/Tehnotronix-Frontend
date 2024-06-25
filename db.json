@@ -1,0 +1,128 @@
+{
+    "carousel": [
+        {
+            "id": 1,
+            "img": "/img/bentley1.jpg"
+        },
+        {
+            "id": 2,
+            "img": "/img/bently2.jpeg"
+        },
+        {
+            "id": 3,
+            "img": "/img/benz5.jpg"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Rolls Royce",
+            "img": "/img/Rolls-Royce-1.png",
+            "price": 120800000,
+            "featured": true,
+            "topSelling": false,
+            "description": "Rolls-Royce is an everlasting expression of the exceptional, where everything we do reflects our persistence and commitment towards the remarkable.."
+          },
+          {
+            "id": 2,
+            "name": "Rolls Royce",
+            "img": "/img/Rolls-Royce-4.jpg",
+            "price": 158000000,
+            "featured": true,
+            "topSelling": false,
+            "description": "A Rolls-Royce is more than a motor car. It is a work of art, hand-made to order exclusively for you, by our team of highly skilled craftspeople and designers.."
+          },
+          {
+            "id": 3,
+            "name": "Benz-AMG-G-63",
+            "img": "/img/Benz E-G63.jpg",
+            "price": 69900000,
+            "featured": true,
+            "topSelling": false,
+            "description": "The Benz G-Class is a luxury sedan known for its elegance, performance, and advanced technology. Experience the ultimate in driving comfort."
+          },
+          {
+            "id": 4,
+            "name": "G-Wagon",
+            "img": "/img/Benz-AMG-G-63.webp",
+            "price": 40000000,
+            "featured": true,
+            "topSelling": false,
+            "description": "Built like a champagne-sipping Ford Bronco or Jeep Wrangler, the Geländewagen has a lavish interior with massaging seats and a six-figure starting price to match. Every G550 is powered by a 416-hp twin-turbo V-8 with a nine-speed automatic transmission. Four-wheel drive is standard."
+          },
+          {
+            "id": 5,
+            "name": "Toyota Corolla",
+            "img": "/img/Toyota Corolla.jpg",
+            "price": 13300000,
+            "featured": false,
+            "topSelling": true,
+            "description": "The Toyota Corolla is a compact sedan known for its reliability, affordability, and excellent fuel efficiency. deal for city driving."
+          },
+          {
+            "id": 6,
+            "name": "Toyota Prado",
+            "img": "/img/Toyota Prado.webp",
+            "price": 15100000,
+            "featured": false,
+            "topSelling": true,
+            "description": "The Toyota Avalon is a full-size sedan offering a smooth and comfortable spacious interior, and advanced features. Experience luxury and performance."
+          },
+          {
+            "id": 7,
+            "name": "Honda Accord",
+            "img": "/img/Honda.jpg",
+            "price": 16000000,
+            "featured": false,
+            "topSelling": true,
+            "description": "The Honda Accord is a popular compact car known for its reliability, fuel efficiency, and sporty design. Enjoy a fun and practical driving experience."
+          },
+          {
+            "": 8,
+            "name": "Honda Accord-SUV",
+            "img": "/img/Honda-3.png",
+            "price": 30000000,
+            "featured": false,
+            "topSelling": true,
+            "description": "The Honda Accord-SUV is a versatile and spacious SUV with advanced safety features and a comfortable Perfect for family adventures."
+          },
+          {
+            "id": 9,
+            "name": "Benz M-Class",
+            "img": "/img/benz-3.jpeg",
+            "price": 9900000,
+            "featured": false,
+            "topSelling": true,
+            "description": "The Benz M-Class is a luxury sedan offering a blend of performance, luxury, and advanced technology. Experience the pinnacle of automotive engineering."
+          },
+          {
+            "id": 10,
+            "name": "Benz E-Class-Salon",
+            "img": "/img/benz-4.jpg",
+            "price": 23000090,
+            "featured": false,
+            "topSelling": true,
+            "description": "The Benz E-Class-Salon is a compact luxury sedan known for its elegant design, advanced technology, and exhilarating performance. Experience luxury in motion."
+          },
+          {
+            "id": 11,
+            "name": "Bentley",
+            "img": "/img/bentley3.jpg",
+            "price": 230000090,
+            "featured": false,
+            "topSelling": true,
+            "description": "Bentley cars are renowned for their powerful performance, elegant styling, and advanced technologies. The brand's long-standing heritage, commitment to quality, and exclusive handcrafted interiors contribute to its reputation as a top-tier luxury car manufacturer.."
+          },
+          {
+            "id": 12,
+            "name": "Bentley Bentaga",
+            "img": "/img/bentley4.jpeg",
+            "price": 280000090,
+            "featured": false,
+            "topSelling": true,
+            "description": "The refined comfort of a Bentley is due in no small part to the high quality of the leather used throughout the cabin. This is thanks to a process that begins long before the hides reach the factory in Crewe."
+          }
+    ]
+   
+
+}
