@@ -19,55 +19,55 @@ function Cart() {
         <table className="w-full table-auto">
           <thead className="bg-gray-100">
             <tr>
-              <th className="p-2">Action</th>
-              <th className="p-2">Item</th>
-              <th className="p-2 hidden sm:table-cell">Image</th>
-              <th className="p-2">Price</th>
-              <th className="p-2">Qty</th>
-              <th className="p-2">Amount</th>
+              <th className="p-1 text-xs sm:text-sm">Action</th>
+              <th className="p-1 text-xs sm:text-sm">Item</th>
+              <th className="p-1 text-xs sm:text-sm">Image</th>
+              <th className="p-1 text-xs sm:text-sm">Price</th>
+              <th className="p-1 text-xs sm:text-sm">Qty</th>
+              <th className="p-1 text-xs sm:text-sm">Amount</th>
             </tr>
           </thead>
           <tbody className="text-center">
             {cartItems.products?.map((item) => (
               <tr className="border-b" key={item.product._id}>
-                <td className="p-2">
+                <td className="p-1">
                   <button onClick={() => deleteItem(item.product._id)}>
-                    <MdDelete className="text-xl text-orange-500" />
+                    <MdDelete className="text-lg sm:text-xl text-orange-500" />
                   </button>
                 </td>
-                <td className="p-2 text-sm">{item.product.name}</td>
-                <td className="p-2 hidden sm:table-cell">
+                <td className="p-1 text-xs sm:text-sm">{item.product.name}</td>
+                <td className="p-1">
                   <div className="flex justify-center">
                     <img
                       src={"https://tehnotronix-api.onrender.com/" + item.product.img}
-                      className="h-10 w-10 object-cover"
+                      className="h-8 w-8 sm:h-10 sm:w-10 object-cover"
                       alt={item.product.name}
                     />
                   </div>
                 </td>
-                <td className="p-2 text-sm">₦{item.product.price}</td>
-                <td className="p-2">
+                <td className="p-1 text-xs sm:text-sm">₦{item.product.price}</td>
+                <td className="p-1">
                   <input
                     type="number"
-                    className="outline outline-1 w-12 p-1 text-center text-sm"
+                    className="outline outline-1 w-10 sm:w-12 p-1 text-center text-xs sm:text-sm"
                     value={item.quantity}
                     min="1"
                     onChange={(e) => updateQuantity(item.product._id, parseInt(e.target.value))}
                   />
                 </td>
-                <td className="p-2 text-sm">₦{item.amount}</td>
+                <td className="p-1 text-xs sm:text-sm">₦{item.amount}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-      <div className="w-full mt-5 flex flex-col sm:flex-row justify-between items-center">
-        <div className="mb-3 sm:mb-0">
-          <h1 className="text-xl sm:text-2xl font-bold">Total = ₦{totalAmount()}</h1>
+      <div className="w-full mt-4 flex flex-col sm:flex-row justify-between items-center">
+        <div className="mb-2 sm:mb-0">
+          <h1 className="text-lg sm:text-xl md:text-2xl font-bold">Total = ₦{totalAmount()}</h1>
         </div>
         <div>
           <Link to="/checkout">
-            <button className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-200 hover:text-black text-sm sm:text-base">
+            <button className="bg-orange-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-md hover:bg-orange-200 hover:text-black text-sm">
               Checkout
             </button>
           </Link>
@@ -77,8 +77,8 @@ function Cart() {
   );
 
   return (
-    <div className="px-2 sm:px-5">
-      <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-5">Your Shopping Cart</h1>
+    <div className="px-1 sm:px-5">
+      <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-4">Your Shopping Cart</h1>
       {cartItems.products && cartItems.products.length > 0 ? (
         cartTable
       ) : (
