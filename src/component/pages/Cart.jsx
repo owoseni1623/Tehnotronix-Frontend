@@ -49,7 +49,7 @@ function Cart() {
                 <td className="p-2">
                   <input
                     type="number"
-                    className="outline outline-1"
+                    className="outline outline-1 w-16 p-1 text-center"
                     value={item.quantity}
                     min="1"
                     onChange={(e) => updateQuantity(item.product._id, parseInt(e.target.value))}
