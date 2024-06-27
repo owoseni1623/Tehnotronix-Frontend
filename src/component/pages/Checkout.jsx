@@ -49,10 +49,10 @@ function Checkout() {
   };
 
   return (
-    <div className="flex gap-5 m-[5%]">
-      <div className="w-[50%]">
+    <div className="flex flex-col lg:flex-row gap-5 m-5">
+      <div className="w-full lg:w-1/2">
         <h1 className="font-bold text-center mb-5">Order Summary</h1>
-        <table className="w-[90%] mx-auto h-[30vh]">
+        <table className="w-full mx-auto h-[30vh]">
           <thead>
             <tr>
               <th>Item</th>
@@ -82,37 +82,37 @@ function Checkout() {
             ))}
           </tbody>
         </table>
-        <div className="w-[90%] mx-auto">
-          <h1 className="text-2xl font-bold">Total = ₦{total}</h1>
+        <div className="w-full mx-auto">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">Total = ₦{total}</h1>
         </div>
       </div>
-      <div className="w-[50%]">
+      <div className="w-full lg:w-1/2">
         <h1 className="mb-5 font-bold text-center">Delivery Information</h1>
         <form onSubmit={handleCheckout} id="orderId">
           <div className="flex flex-col gap-3 mb-3">
             <label className="font-bold" htmlFor="firstName">
               First Name
             </label>
-            <input className="outline outline-1" type="text" id="firstName" name="firstName" />
+            <input className="outline outline-1 p-2" type="text" id="firstName" name="firstName" />
           </div>
           <div className="flex flex-col gap-3 mb-3">
             <label className="font-bold" htmlFor="lastName">
               Last Name
             </label>
-            <input className="outline outline-1" type="text" id="lastName" name="lastName" />
+            <input className="outline outline-1 p-2" type="text" id="lastName" name="lastName" />
           </div>
           <div className="flex flex-col gap-3 mb-3">
             <label className="font-bold" htmlFor="phone">
               Phone Number
             </label>
-            <input className="outline outline-1" type="text" id="phone" name="phone" />
+            <input className="outline outline-1 p-2" type="text" id="phone" name="phone" />
           </div>
           <div className="flex flex-col gap-3 mb-3">
             <label className="font-bold" htmlFor="address">
               Address
             </label>
             <textarea
-              className="outline outline-1"
+              className="outline outline-1 p-2"
               id="address"
               name="address"
               cols="10"
@@ -122,7 +122,7 @@ function Checkout() {
           <div>
             <button
               type="submit"
-              className="bg-black text-white p-[10px] rounded-md hover:bg-orange-500"
+              className="bg-black text-white p-2 sm:p-3 md:p-4 rounded-md hover:bg-orange-500"
             >
               Pay Now
             </button>

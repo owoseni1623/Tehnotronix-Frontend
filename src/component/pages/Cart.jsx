@@ -15,29 +15,27 @@ function Cart() {
 
   const cartTable = (
     <>
-      <table className="w-[50%] mx-auto h-[50vh]">
+      <table className="w-full sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[50%] mx-auto">
         <thead>
           <tr>
-            <th>Action</th>
-            <th>Item</th>
-            <th>Image</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Amount</th>
+            <th className="p-2">Action</th>
+            <th className="p-2">Item</th>
+            <th className="p-2">Image</th>
+            <th className="p-2">Price</th>
+            <th className="p-2">Quantity</th>
+            <th className="p-2">Amount</th>
           </tr>
         </thead>
         <tbody className="text-center">
           {cartItems.products?.map((item) => (
             <tr className="border-b-2" key={item.product._id}>
-              <td>
-                <div>
-                  <button onClick={() => deleteItem(item.product._id)}>
-                    <MdDelete className="text-2xl text-orange-500" />
-                  </button>
-                </div>
+              <td className="p-2">
+                <button onClick={() => deleteItem(item.product._id)}>
+                  <MdDelete className="text-2xl text-orange-500" />
+                </button>
               </td>
-              <td>{item.product.name}</td>
-              <td>
+              <td className="p-2">{item.product.name}</td>
+              <td className="p-2">
                 <div className="flex justify-center">
                   <img
                     src={"https://tehnotronix-api.onrender.com/" + item.product.img}
@@ -46,8 +44,8 @@ function Cart() {
                   />
                 </div>
               </td>
-              <td>₦{item.product.price}</td>
-              <td>
+              <td className="p-2">₦{item.product.price}</td>
+              <td className="p-2">
                 <input
                   type="number"
                   className="outline outline-1"
@@ -56,18 +54,18 @@ function Cart() {
                   onChange={(e) => updateQuantity(item.product._id, parseInt(e.target.value))}
                 />
               </td>
-              <td>₦{item.amount}</td>
+              <td className="p-2">₦{item.amount}</td>
             </tr>
           ))}
         </tbody>
       </table>
-      <div className="w-[90%] mx-auto mt-5 flex justify-between">
+      <div className="w-full sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[50%] mx-auto mt-5 flex justify-between">
         <div>
-          <h1 className="text-4xl font-bold">Total = ₦{totalAmount()}</h1>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Total = ₦{totalAmount()}</h1>
         </div>
         <div>
           <Link to="/checkout">
-            <button className="bg-orange-500 text-white p-[10px] rounded-md hover:bg-orange-200 hover:text-black">
+            <button className="bg-orange-500 text-white p-2 sm:p-3 md:p-4 rounded-md hover:bg-orange-200 hover:text-black">
               Checkout
             </button>
           </Link>
@@ -77,8 +75,8 @@ function Cart() {
   );
 
   return (
-    <div className="m-[5%]">
-      <h1 className="text-3xl font-bold text-center mb-10">Your Shopping Cart</h1>
+    <div className="m-5">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10">Your Shopping Cart</h1>
       {cartItems.products && cartItems.products.length > 0 ? (
         cartTable
       ) : (
