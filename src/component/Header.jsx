@@ -94,7 +94,7 @@ function Header() {
             </Link>
             <Link onClick={logout} className="text-lg font-medium hover:text-orange-500" to="">Logout</Link>
             <div className="text-lg font-medium flex items-center gap-2">
-              <img src={"https://tehnotronix-api.onrender.com/" + user?.img} alt="" className="h-7 w-7 rounded-full" />
+              <img src={"https://tehnotronix-api.onrender.com" + user?.img} alt="" className="h-7 w-7 rounded-full" />
               <p>Hi, {user?.firstName}</p>
             </div>
           </nav>
