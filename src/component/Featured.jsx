@@ -27,7 +27,7 @@ function Featured() {
         {featured.map((item) => (
           <Card key={item._id} description={item.description} descriptionColor="orange">
             <Link to={`/detail/${item._id}`}>
-              <img src={"http://localhost:3000/" + item.img} alt="" className="h-[200px]" />
+              <img src={"https://tehnotronix-api.onrender.com/" + item.img} alt="" className="h-[200px]" />
             </Link>
             <p className="font-bold">{item.name}</p>
             <p>₦{item.price}</p>

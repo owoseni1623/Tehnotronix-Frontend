@@ -24,7 +24,7 @@ function Detail() {
   return (
       <div className="flex flex-col md:flex-row m-[5%] gap-4">
           <div className="flex justify-center md:justify-start md:m-[5%] gap-4">
-              <img src={"http://localhost:3000/" + caritems?.img} alt="" className="w-full md:w-auto" />
+              <img src={"https://tehnotronix-api.onrender.com/" + caritems?.img} alt="" className="w-full md:w-auto" />
           </div>
           <div className="w-full md:w-[50%] md:m-[50px]">
               <h1 className="text-xl md:text-2xl font-bold border-b-2 mb-5">{caritems?.name}</h1>

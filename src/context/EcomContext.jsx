@@ -45,7 +45,7 @@ export const EcomProvider = ({children}) => {
     const topSelling = product.filter((item) => item.topSelling === true)
 
     const fetchProduct = async()=> {
-        const response = await fetch("http://localhost:3000/api/product");
+        const response = await fetch("https://tehnotronix-api.onrender.com/api/product");
         const data = await response.json()
         setProduct(data)
     }
@@ -58,7 +58,7 @@ export const EcomProvider = ({children}) => {
 
     const addTocart = async ( productId ) =>{
         try {
-            const res = await fetch("http://localhost:3000/addToCart", {
+            const res = await fetch("https://tehnotronix-api.onrender.com/addToCart", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json", "auth-token": `${localStorage.getItem("auth-token")}`,
@@ -82,7 +82,7 @@ export const EcomProvider = ({children}) => {
 
     const fetchCart = async () => {
         try {
-            const res = await fetch("http://localhost:3000/cart", {
+            const res = await fetch("https://tehnotronix-api.onrender.com/cart", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json", "auth-token": `${localStorage.getItem("auth-token")}`,
@@ -106,7 +106,7 @@ export const EcomProvider = ({children}) => {
             return;
         }
         try {
-           const res = await fetch("http://localhost:3000/update", {
+           const res = await fetch("https://tehnotronix-api.onrender.com/update", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
@@ -136,7 +136,7 @@ export const EcomProvider = ({children}) => {
 
     const deleteItem = async (productId) => {
         try {
-                const res = await fetch ("http://localhost:3000/remove", {
+                const res = await fetch ("https://tehnotronix-api.onrender.com/remove", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json", 
@@ -189,7 +189,7 @@ export const EcomProvider = ({children}) => {
 
     const createOrder = async (transaction_id, orderId) => {
         try {
-            const response = await fetch("http://localhost:3000/api/payment/verify", {
+            const response = await fetch("https://tehnotronix-api.onrender.com/api/payment/verify", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

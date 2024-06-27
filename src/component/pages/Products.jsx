@@ -35,7 +35,7 @@ function Products() {
         {filteredProducts.map((item) => (
           <Card key={item._id} description={item.description}>
             <Link to={`/detail/${item._id}`}>
-              <img src={"http://localhost:3000/" + item.img} alt="" className="h-40 md:h-48 lg:h-56 xl:h-48 object-cover w-full" />
+              <img src={"https://tehnotronix-api.onrender.com/" + item.img} alt="" className="h-40 md:h-48 lg:h-56 xl:h-48 object-cover w-full" />
             </Link>
             <div>
               <p className="font-bold text-lg">{item.name}</p>
