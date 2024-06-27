@@ -16,7 +16,7 @@ function Cart() {
   const cartTable = (
     <>
       <div className="overflow-x-auto">
-        <table className="w-full sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[50%] mx-auto">
+        <table className="w-full sm:w-[90%] md:w-[30%] lg:w-[60%] xl:w-[50%] mx-auto">
           <thead>
             <tr>
               <th className="p-2">Action</th>
